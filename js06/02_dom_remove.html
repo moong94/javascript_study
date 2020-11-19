@@ -1,0 +1,16 @@
+<script>
+    function removeNode(){
+        var parent = document.getElementById("target");
+        var child = document.getElementById("p1");
+        parent.removeChild(child);
+    }
+</script>
+<div id ="target">
+    <p id="p1">
+        첫 번째 단락
+    </p>
+    <p id="p2">
+        두 번째 단락
+    </p>
+    <button onclick="removeNode()">누르세요</button>
+</div>

@@ -1,0 +1,17 @@
+<script>
+    var color=["white","yellow","aqua","purple"];
+
+    var i = 0;
+    function changeColor(){
+        i++;
+        if(i >= color.length){
+            i = 0;
+        }
+        var bodyTag = document.getElementById("theBody");
+        bodyTag.style.backgroundColor = color[i];
+    }
+</script>
+<body id="theBody">
+    <button onclick="changeColor()">배경색 바꾸기</button>
+    
+</body>
