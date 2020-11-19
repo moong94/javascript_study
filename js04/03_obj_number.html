@@ -1,0 +1,13 @@
+<script>
+    var count1, count2;
+    count1 = new Number(1.237);
+    //숫자를 객체로 생성함
+    //문자열을 숫자로 변경 가능할 경우 숫자로 변경해줄 수도 있음.
+
+    count2 = 1.238;
+
+    //toFixed : 숫자를 고정 소수점표기법으로 표기해 반환.
+    if(count1.toFixed(2) === count2.toFixed(2)){
+        alert("소수점 2째 자리까지 같습니다.");
+    }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>배열객체</title>
+        <SCRIPT>
+            var greenArr = ["교대","방배","강남"];
+            var yellowArr = ["미금","정자","수서"];
+
+            //2번 인덱스 1개 제거 후 "서초","역삼" 추가
+            greenArr.splice(2,1,"서초","역삼");
+            console.log(greenArr);
+
+            console.log(yellowArr);
+            var data1 = yellowArr.pop();
+            console.log(yellowArr);
+
+            var data2 = yellowArr.shift();  //앞에서 pop
+            console.log(yellowArr);
+
+            yellowArr.push(data2);
+            console.log(yellowArr);
+
+            var data3 = yellowArr.pop();
+            console.log(yellowArr);
+            yellowArr.unshift(data3);   //앞에 붙임
+
+            console.log(yellowArr);
+        </SCRIPT>
+        </title>
+    </head>
+</html>
